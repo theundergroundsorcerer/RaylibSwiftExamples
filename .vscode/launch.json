@@ -125,6 +125,24 @@
             "name": "Release CoreInputMouseWheel",
             "program": "${workspaceFolder:RaylibSwiftExamples}/.build/release/CoreInputMouseWheel",
             "preLaunchTask": "swift: Build Release CoreInputMouseWheel"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Debug CoreInputGamepad",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/debug/CoreInputGamepad",
+            "preLaunchTask": "swift: Build Debug CoreInputGamepad"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Release CoreInputGamepad",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/release/CoreInputGamepad",
+            "preLaunchTask": "swift: Build Release CoreInputGamepad"
         }
     ]
 }

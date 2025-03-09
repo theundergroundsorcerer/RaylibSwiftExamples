@@ -31,6 +31,12 @@ let package = Package(
             name: "CoreInputMouseWheel",
             dependencies: ["RaylibSwift"],
             path: "Sources/Core/CoreInputMouseWheel"
+        ),
+
+        .executableTarget(
+            name: "CoreInputGamepad",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Core/CoreInputGamepad"
         )
     ]
 )
