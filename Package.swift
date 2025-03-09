@@ -25,6 +25,12 @@ let package = Package(
             name: "CoreInputMouse",
             dependencies: ["RaylibSwift"],
             path: "Sources/Core/CoreInputMouse"
+        ),
+
+        .executableTarget(
+            name: "CoreInputMouseWheel",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Core/CoreInputMouseWheel"
         )
     ]
 )

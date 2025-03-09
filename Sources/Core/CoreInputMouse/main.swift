@@ -1,11 +1,20 @@
-/// A port of core_input_mouse.c example to Raylib.swift
-import RaylibSwift
+/**
+ * CoreInputMouse - Mouse Input Example
+ *
+ * This example demonstrates basic mouse input handling in RaylibSwift.
+ * It shows how to track the mouse position and detect mouse button clicks.
+ * 
+ * Based on the raylib "core_input_mouse" example:
+ * https://github.com/raysan5/raylib/blob/master/examples/core/core_input_mouse.c
+ */
+ import RaylibSwift
 
 let screenWidth: Int32 = 800
 let screenHeight: Int32 = 450
 
 Window.initialize(screenWidth, screenHeight, "raylib [core] example- mouse input")
 
+Time.setTargetFPS(60)
 var ballPosition = Vector2(x: -100, y: -100)
 var ballColor = Color.darkBlue
 

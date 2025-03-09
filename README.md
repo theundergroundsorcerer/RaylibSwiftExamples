@@ -1,42 +1,39 @@
-# RaylibExamples
+# RaylibSwiftExamples
 
-A collection of Swift example applications using [RaylibSwift](https://github.com/theundergroundsorcerer/RaylibSwift), a Swift wrapper for the [Raylib](https://www.raylib.com/) game development library.
-
-These examples are Swift ports of the original C examples found in the [Raylib examples collection](https://github.com/raysan5/raylib/tree/master/examples).
+A collection of examples demonstrating the use of [RaylibSwift](https://github.com/theundergroundsorcerer/RaylibSwift), a Swift wrapper for the Raylib game development library.
 
 ## Examples
 
-The repository includes the following examples:
+### Core Examples
 
-### Core
+- **CoreBasicWindow**: Demonstrates how to create a basic window using RaylibSwift
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_basic_window.c)
+- **CoreInputKeys**: Shows how to handle keyboard input
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_keys.c)
+- **CoreInputMouse**: Illustrates mouse input handling
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_mouse.c)
+- **CoreInputMouseWheel**: Demonstrates mouse wheel interaction
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_mouse_wheel.c)
 
-- **CoreBasicWindow**: Basic window creation and management  
-  *(Equivalent to [core_basic_window.c](https://github.com/raysan5/raylib/blob/master/examples/core/core_basic_window.c))*
+## Getting Started
 
-- **CoreInputKeys**: Keyboard input detection and handling  
-  *(Equivalent to [core_input_keys.c](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_keys.c))*
+### Prerequisites
+- Swift 6.0 or later
+- macOS, Linux, or other platform supported by Swift
 
-- **CoreInputMouse**: Mouse input and cursor visibility  
-  *(Equivalent to [core_input_mouse.c](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_mouse.c))*
-
-## Requirements
-
-- Swift 6.0+
-- macOS (primary platform) or Linux (has been tested under Ubuntu)
-
-## Building and Running
-
-To build and run an example:
+### Running Examples
+Clone the repository and use Swift package manager to run any example:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/RaylibExamples.git
-cd RaylibExamples
+git clone https://github.com/yourusername/RaylibSwiftExamples.git
+cd RaylibSwiftExamples
 
 # Run a specific example
 swift run CoreBasicWindow
 swift run CoreInputKeys
 swift run CoreInputMouse
+swift run CoreInputMouseWheel
 ```
 
 ## Creating New Examples
@@ -46,6 +43,7 @@ To add a new example:
 1. Create a new directory under the appropriate category in the `Sources` directory
 2. Add your Swift code with a `main.swift` file
 3. Update the `Package.swift` file with a new executable target
+4. Include a link to the original raylib example in your code comments and in the README
 
 ## Directory Structure
 
@@ -66,6 +64,11 @@ Sources/
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+When contributing new examples, please:
+1. Follow the naming convention of the original raylib examples
+2. Include a link to the corresponding original raylib example
+3. Add proper documentation comments
 
 ## License
 

@@ -107,6 +107,24 @@
             "name": "Release CoreInputMouse",
             "program": "${workspaceFolder:RaylibSwiftExamples}/.build/release/CoreInputMouse",
             "preLaunchTask": "swift: Build Release CoreInputMouse"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Debug CoreInputMouseWheel",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/debug/CoreInputMouseWheel",
+            "preLaunchTask": "swift: Build Debug CoreInputMouseWheel"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Release CoreInputMouseWheel",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/release/CoreInputMouseWheel",
+            "preLaunchTask": "swift: Build Release CoreInputMouseWheel"
         }
     ]
 }
