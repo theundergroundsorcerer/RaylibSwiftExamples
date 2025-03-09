@@ -1,0 +1,112 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibExamples}",
+            "name": "Debug Examples",
+            "program": "${workspaceFolder:RaylibExamples}/.build/debug/Examples",
+            "preLaunchTask": "swift: Build Debug Examples"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibExamples}",
+            "name": "Release Examples",
+            "program": "${workspaceFolder:RaylibExamples}/.build/release/Examples",
+            "preLaunchTask": "swift: Build Release Examples"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibExamples}",
+            "name": "Debug BasicWindow",
+            "program": "${workspaceFolder:RaylibExamples}/.build/debug/BasicWindow",
+            "preLaunchTask": "swift: Build Debug BasicWindow"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibExamples}",
+            "name": "Release BasicWindow",
+            "program": "${workspaceFolder:RaylibExamples}/.build/release/BasicWindow",
+            "preLaunchTask": "swift: Build Release BasicWindow"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibExamples}",
+            "name": "Debug BasicScreenManager",
+            "program": "${workspaceFolder:RaylibExamples}/.build/debug/BasicScreenManager",
+            "preLaunchTask": "swift: Build Debug BasicScreenManager"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibExamples}",
+            "name": "Release BasicScreenManager",
+            "program": "${workspaceFolder:RaylibExamples}/.build/release/BasicScreenManager",
+            "preLaunchTask": "swift: Build Release BasicScreenManager"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Debug CoreBasicWindow",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/debug/CoreBasicWindow",
+            "preLaunchTask": "swift: Build Debug CoreBasicWindow"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Release CoreBasicWindow",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/release/CoreBasicWindow",
+            "preLaunchTask": "swift: Build Release CoreBasicWindow"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Debug CoreInputKeys",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/debug/CoreInputKeys",
+            "preLaunchTask": "swift: Build Debug CoreInputKeys"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Release CoreInputKeys",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/release/CoreInputKeys",
+            "preLaunchTask": "swift: Build Release CoreInputKeys"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Debug CoreInputMouse",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/debug/CoreInputMouse",
+            "preLaunchTask": "swift: Build Debug CoreInputMouse"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Release CoreInputMouse",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/release/CoreInputMouse",
+            "preLaunchTask": "swift: Build Release CoreInputMouse"
+        }
+    ]
+}

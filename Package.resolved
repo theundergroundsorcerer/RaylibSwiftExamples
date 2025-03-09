@@ -1,0 +1,15 @@
+{
+  "originHash" : "803669be1168a96cde9e9550145026e013ee53a90f5a450272fbe6a1f16efcce",
+  "pins" : [
+    {
+      "identity" : "raylibswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/theundergroundsorcerer/RaylibSwift.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "ecd511b8ad8c9d7726b24c2c0020644e8d7ef001"
+      }
+    }
+  ],
+  "version" : 3
+}
