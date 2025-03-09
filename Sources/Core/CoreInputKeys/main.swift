@@ -3,7 +3,7 @@
  *
  * This example demonstrates basic keyboard input handling in RaylibSwift.
  * It shows how to move an object (a ball) on screen using the arrow keys.
- * 
+ *
  * Based on the raylib "core_input_keys" example:
  * https://github.com/raysan5/raylib/blob/master/examples/core/core_input_keys.c
  */
@@ -19,26 +19,27 @@ var ballPosition = Vector2(x: Float(screenWidth / 2), y: Float(screenHeigth / 2)
 let ballSpeed: Float = 2.0
 Time.setTargetFPS(60)
 
-while(!Window.shouldClose) {
+while !Window.shouldClose {
     // Update ball position based on arrow key input
-    if (Input.Keyboard.isDown(key: .right)) {
+    if Input.Keyboard.isDown(key: .right) {
         ballPosition.x += ballSpeed
-    } 
-    if (Input.Keyboard.isDown(key: .left)) {
+    }
+    if Input.Keyboard.isDown(key: .left) {
         ballPosition.x -= ballSpeed
     }
-    if (Input.Keyboard.isDown(key: .up)) {
+    if Input.Keyboard.isDown(key: .up) {
         ballPosition.y -= ballSpeed
     }
-    if (Input.Keyboard.isDown(key: .down)) {
+    if Input.Keyboard.isDown(key: .down) {
         ballPosition.y += ballSpeed
     }
 
-    Graphics.beginDrawing()
-    Graphics.clearBackground(.rayWhite)
-    Graphics.drawText("Move the ball with arrow keys", at: (x: 10, y: 10), fontSize: 20, color: .darkGray)
-    Graphics.drawCircle(at: ballPosition, radius: 50, color: .maroon)
-    Graphics.endDrawing()
+    Draw.frame {
+        Draw.clearBackground( .rayWhite)
+        Draw.text(
+            "Move the ball with arrow keys", at: (x: 10, y: 10), fontSize: 20, color: .darkGray)
+        Draw.circle(at: ballPosition, radius: 50, color: .maroon)
+    }
 }
 
 Window.close()

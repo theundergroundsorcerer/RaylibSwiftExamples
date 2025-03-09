@@ -3,7 +3,7 @@
  *
  * This example demonstrates how to create a basic window using RaylibSwift.
  * It shows the window creation, drawing process, and proper cleanup.
- * 
+ *
  * Based on the raylib "core_basic_window" example:
  * https://github.com/raysan5/raylib/blob/master/examples/core/core_basic_window.c
  */
@@ -17,16 +17,16 @@ Window.initialize(screenWidth, screenHeight, "raylib [core] example - basic wind
 
 Time.setTargetFPS(60)
 
-while(!Window.shouldClose) {
-    Graphics.beginDrawing()
-    Graphics.clearBackground(.rayWhite)
-    Graphics.drawText(
-        "Congrats! You created your first window!",
-        at: (x: 190, y: 200),
-        fontSize: 20,
-        color: .lightGray
-    )
-    Graphics.endDrawing()
+while !Window.shouldClose {
+    Draw.frame {
+        Draw.clearBackground( .rayWhite)
+        Draw.text(
+            "Congrats! You created your first window!",
+            at: (x: 190, y: 200),
+            fontSize: 20,
+            color: .lightGray
+        )
+    }
 }
 
 Window.close()

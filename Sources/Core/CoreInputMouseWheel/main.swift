@@ -1,5 +1,5 @@
-import RaylibSwift
 import Foundation
+import RaylibSwift
 
 let screenWidth: Int32 = 800
 let screenHeight: Int32 = 450
@@ -11,33 +11,32 @@ var scrollSpeed: Int32 = 4
 
 Time.setTargetFPS(60)
 
-while(!Window.shouldClose) {
+while !Window.shouldClose {
     boxPositionY -= Int32(Input.Mouse.wheelMove) * scrollSpeed
 
-    Graphics.beginDrawing()
+    Draw.frame {
 
-    Graphics.clearBackground(.rayWhite)
-    
-    Graphics.drawRectangle(
-        at: (screenWidth / 2 - 40, y: boxPositionY),
-        width: 80, 
-        height: 80, 
-        color: .gray)
+        Draw.clearBackground( .rayWhite)
 
-    Graphics.drawText(
-        "Use mouse wheel to move the cube up and down", 
-        at: (x: 10, y: 20), 
-        fontSize: 20, 
-        color: .gray)
-    
-    Graphics.drawText(
-        "Box position Y: \(String(format: "%03d", Int(boxPositionY) ) )",
-        at: (x: 10, y: 40),
-        fontSize: 20,
-        color: .lightGray
-    )
+        Draw.rectangle(
+            at: (screenWidth / 2 - 40, y: boxPositionY),
+            width: 80,
+            height: 80,
+            color: .gray)
 
-    Graphics.endDrawing()
+        Draw.text(
+            "Use mouse wheel to move the cube up and down",
+            at: (x: 10, y: 20),
+            fontSize: 20,
+            color: .gray)
+
+        Draw.text(
+            "Box position Y: \(String(format: "%03d", Int(boxPositionY) ) )",
+            at: (x: 10, y: 40),
+            fontSize: 20,
+            color: .lightGray
+        )
+    }
 }
 
 Window.close()

@@ -3,11 +3,11 @@
  *
  * This example demonstrates basic mouse input handling in RaylibSwift.
  * It shows how to track the mouse position and detect mouse button clicks.
- * 
+ *
  * Based on the raylib "core_input_mouse" example:
  * https://github.com/raysan5/raylib/blob/master/examples/core/core_input_mouse.c
  */
- import RaylibSwift
+import RaylibSwift
 
 let screenWidth: Int32 = 800
 let screenHeight: Int32 = 450
@@ -45,31 +45,33 @@ while !Window.shouldClose {
     }
 
     // Draw
-    Graphics.beginDrawing()
-    Graphics.clearBackground(.white)
-    Graphics.drawCircle(at: ballPosition, radius: 40, color: ballColor)
+    Draw.frame {
+        Draw.clearBackground( .white)
+        Draw.circle(at: ballPosition, radius: 40, color: ballColor)
 
-    Graphics.drawText(
-        "Move ball with mouse and click mouse button to change color",
-        at: (x: 10, y: 10),
-        fontSize: 20,
-        color: ballColor
-    )
-    Graphics.drawText(
-        "Press 'H' to toggle cursor visibility",
-        at: (x: 10, y: 30),
-        fontSize: 20,
-        color: .darkGray
-    )
+        Draw.text(
+            "Move ball with mouse and click mouse button to change color",
+            at: (x: 10, y: 10),
+            fontSize: 20,
+            color: ballColor
+        )
 
-    if (Window.Cursor.isHidden) {
-        Graphics.drawText("Cursor Hidden", 
-        at: (x: 20, y: 60), 
-        fontSize: 20, 
-        color: .red)
+        Draw.text(
+            "Press 'H' to toggle cursor visibility",
+            at: (x: 10, y: 30),
+            fontSize: 20,
+            color: .darkGray
+        )
+
+        if Window.Cursor.isHidden {
+            Draw.text(
+                "Cursor Hidden",
+                at: (x: 20, y: 60),
+                fontSize: 20,
+                color: .red)
+        }
+
     }
-
-    Graphics.endDrawing()
 }
 
 Window.close()
