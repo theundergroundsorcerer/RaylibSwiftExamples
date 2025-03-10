@@ -36,7 +36,10 @@ let package = Package(
         .executableTarget(
             name: "CoreInputGamepad",
             dependencies: ["RaylibSwift"],
-            path: "Sources/Core/CoreInputGamepad"
+            path: "Sources/Core/CoreInputGamepad",
+            resources: [
+                .process("Resources")  // This includes the Resources directory with ps3.png and xbox.png
+            ]
         )
     ]
 )
