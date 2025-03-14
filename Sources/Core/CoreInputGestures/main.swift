@@ -20,5 +20,5 @@ var gestureCount = 0 as Int32
 var gestureStrings = [String]()
 gestureStrings.reserveCapacity(maxGestureStrings)
 
-var currentGesture = Input.Gestures.Gesture.none
-var lastGesture = Input.Gestures.Gesture.none
+var currentGesture = Gesture.none
+var lastGesture = Gesture.none

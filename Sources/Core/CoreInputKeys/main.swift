@@ -21,16 +21,16 @@ Time.setTargetFPS(60)
 
 while !Window.shouldClose {
     // Update ball position based on arrow key input
-    if Input.Keyboard.isDown(key: .right) {
+    if Keyboard.isDown(key: .right) {
         ballPosition.x += ballSpeed
     }
-    if Input.Keyboard.isDown(key: .left) {
+    if Keyboard.isDown(key: .left) {
         ballPosition.x -= ballSpeed
     }
-    if Input.Keyboard.isDown(key: .up) {
+    if Keyboard.isDown(key: .up) {
         ballPosition.y -= ballSpeed
     }
-    if Input.Keyboard.isDown(key: .down) {
+    if Keyboard.isDown(key: .down) {
         ballPosition.y += ballSpeed
     }
 

@@ -12,7 +12,7 @@ var scrollSpeed: Int32 = 4
 Time.setTargetFPS(60)
 
 while !Window.shouldClose {
-    boxPositionY -= Int32(Input.Mouse.wheelMove) * scrollSpeed
+    boxPositionY -= Int32(Mouse.wheelMove) * scrollSpeed
 
     Draw.frame {
 
