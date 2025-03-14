@@ -143,6 +143,24 @@
             "name": "Release CoreInputGamepad",
             "program": "${workspaceFolder:RaylibSwiftExamples}/.build/release/CoreInputGamepad",
             "preLaunchTask": "swift: Build Release CoreInputGamepad"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Debug CoreInputGestures",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/debug/CoreInputGestures",
+            "preLaunchTask": "swift: Build Debug CoreInputGestures"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Release CoreInputGestures",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/release/CoreInputGestures",
+            "preLaunchTask": "swift: Build Release CoreInputGestures"
         }
     ]
 }

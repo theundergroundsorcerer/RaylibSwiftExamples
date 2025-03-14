@@ -7,7 +7,10 @@ import PackageDescription
 
 let package = Package(
     name: "RaylibSwiftExamples",
-    dependencies: [.package(url: "https://github.com/theundergroundsorcerer/RaylibSwift.git", branch: "develop")],
+    dependencies: [
+        .package(
+            url: "https://github.com/theundergroundsorcerer/RaylibSwift.git", branch: "develop")
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
@@ -15,7 +18,7 @@ let package = Package(
             name: "CoreBasicWindow",
             dependencies: ["RaylibSwift"],
             path: "Sources/Core//CoreBasicWindow"),
-            
+
         .executableTarget(
             name: "CoreInputKeys",
             dependencies: ["RaylibSwift"],
@@ -40,6 +43,12 @@ let package = Package(
             resources: [
                 .process("Resources")  // This includes the Resources directory with ps3.png and xbox.png
             ]
+        ),
+
+        .executableTarget(
+            name: "CoreInputGestures",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Core/CoreInputGestures"
         )
     ]
 )
