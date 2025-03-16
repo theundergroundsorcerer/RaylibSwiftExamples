@@ -161,6 +161,24 @@
             "name": "Release CoreInputGestures",
             "program": "${workspaceFolder:RaylibSwiftExamples}/.build/release/CoreInputGestures",
             "preLaunchTask": "swift: Build Release CoreInputGestures"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Debug CoreInputMutlitouch",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/debug/CoreInputMutlitouch",
+            "preLaunchTask": "swift: Build Debug CoreInputMutlitouch"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Release CoreInputMutlitouch",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/release/CoreInputMutlitouch",
+            "preLaunchTask": "swift: Build Release CoreInputMutlitouch"
         }
     ]
 }

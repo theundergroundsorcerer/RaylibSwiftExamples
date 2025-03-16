@@ -46,9 +46,20 @@ let package = Package(
         ),
 
         .executableTarget(
+            name: "CoreInputMutlitouch",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Core/CoreInputMultitouch"
+        ),
+
+        .executableTarget(
             name: "CoreInputGestures",
             dependencies: ["RaylibSwift"],
             path: "Sources/Core/CoreInputGestures"
-        )
+        ),
+
+        .executableTarget(
+            name: "CoreInputVirtualControls",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Core/CoreInputVirtualControls")
     ]
 )

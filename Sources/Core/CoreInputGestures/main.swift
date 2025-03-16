@@ -22,9 +22,7 @@ var gestureStrings = [String](repeating: "", count: maxGestureStrings)
 var currentGesture = Gesture.none
 var lastGesture = Gesture.none
 
-Time.setTargetFPS(60)
-
-while !Window.shouldClose {
+Window.loop(fps: 60) {
     lastGesture = currentGesture
     currentGesture = Gesture.currentDetected
     touchPosition = Touch.touchPosition(index: 0)

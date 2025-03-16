@@ -1,3 +1,6 @@
+/// A port of core_input_multitouch to RaylibSwift
+/// Hasn't been tested yet.
+
 import RaylibSwift
 import Foundation
 

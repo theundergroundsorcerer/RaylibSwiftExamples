@@ -9,9 +9,7 @@ Window.initialize(screenWidth, screenHeight, "raylib [core] example - input mous
 var boxPositionY = screenHeight / 2 - 40
 var scrollSpeed: Int32 = 4
 
-Time.setTargetFPS(60)
-
-while !Window.shouldClose {
+Window.loop(fps: 60) {
     boxPositionY -= Int32(Mouse.wheelMove) * scrollSpeed
 
     Draw.frame {
@@ -38,5 +36,3 @@ while !Window.shouldClose {
         )
     }
 }
-
-Window.close()

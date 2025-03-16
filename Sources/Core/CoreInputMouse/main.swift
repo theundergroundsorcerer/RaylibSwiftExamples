@@ -14,11 +14,10 @@ let screenHeight: Int32 = 450
 
 Window.initialize(screenWidth, screenHeight, "raylib [core] example- mouse input")
 
-Time.setTargetFPS(60)
 var ballPosition = Vector2(x: -100, y: -100)
 var ballColor = Color.darkBlue
 
-while !Window.shouldClose {
+Window.loop(fps: 60) {
     if Keyboard.isPressed(key: .h) {
         if Window.Cursor.isHidden == false {
             Window.Cursor.hide()
@@ -73,5 +72,3 @@ while !Window.shouldClose {
 
     }
 }
-
-Window.close()
