@@ -10,7 +10,7 @@ Window.initialize(screenWidth, screenHeight, "raylib [core] example - input mult
 var touchPositions = [Vector2](repeating: Vector2(0, 0), count: 10)
 
 Window.loop(fps: 60) {
-    var touchCount = Touch.touchPointCount
+    var touchCount = Touch.pointCount
     if touchCount > maxTouchPoints {
         touchCount = maxTouchPoints
     }

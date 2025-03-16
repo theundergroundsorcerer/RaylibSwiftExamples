@@ -179,6 +179,24 @@
             "name": "Release CoreInputMutlitouch",
             "program": "${workspaceFolder:RaylibSwiftExamples}/.build/release/CoreInputMutlitouch",
             "preLaunchTask": "swift: Build Release CoreInputMutlitouch"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Debug CoreInputVirtualControls",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/debug/CoreInputVirtualControls",
+            "preLaunchTask": "swift: Build Debug CoreInputVirtualControls"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Release CoreInputVirtualControls",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/release/CoreInputVirtualControls",
+            "preLaunchTask": "swift: Build Release CoreInputVirtualControls"
         }
     ]
 }

@@ -25,7 +25,7 @@ var lastGesture = Gesture.none
 Window.loop(fps: 60) {
     lastGesture = currentGesture
     currentGesture = Gesture.currentDetected
-    touchPosition = Touch.touchPosition(index: 0)
+    touchPosition = Touch.position(index: 0)
 
     if Shapes.isInside(of: touchArea, point: touchPosition) && currentGesture != Gesture.none {
         if currentGesture != lastGesture {
