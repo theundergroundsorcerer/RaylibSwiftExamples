@@ -47,10 +47,12 @@ Window.loop(fps: 60) {
     // Make sure user is pressing left mouse button if they're from desktop
     if Touch.pointCount > 0 || (Touch.pointCount == 0 && Mouse.isDown(button: .left)) {
         for i in 0..<PadButton.max {
-            let distX = buttonPositions[Int(i)].x - inputPosition.x
-            let distY = buttonPositions[Int(i)].y - inputPosition.y
+            // calculate whether the distance of mouse press from the center of ith button
+            // is smaller than the radius of the button
+            let deltaX = buttonPositions[Int(i)].x - inputPosition.x
+            let deltaY = buttonPositions[Int(i)].y - inputPosition.y
 
-            if distX*distX + distY*distY < buttonRadius*buttonRadius {
+            if deltaX*deltaX + deltaY*deltaY < buttonRadius*buttonRadius {
                 pressedButton = PadButton(rawValue: i) ?? .none
                 break
             }
