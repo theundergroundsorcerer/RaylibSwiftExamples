@@ -57,6 +57,12 @@ let package = Package(
         .executableTarget(
             name: "ShapesBouncingBall",
             dependencies: ["RaylibSwift"],
-            path: "Sources/Shapes/ShapesBouncingBall")
+            path: "Sources/Shapes/ShapesBouncingBall"),
+        
+        .executableTarget(
+            name: "ShapesColorsPalette",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Shapes/ShapesColorsPalette"
+        )
     ]
 )
