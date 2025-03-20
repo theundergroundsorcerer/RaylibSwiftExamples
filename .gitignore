@@ -1,6 +1,6 @@
 .DS_Store
 /.build
-/.develop
+/.vscode
 /Packages
 xcuserdata/
 DerivedData/
