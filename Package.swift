@@ -35,14 +35,6 @@ let package = Package(
             path: "Sources/Core/CoreInputMouseWheel"),
 
         .executableTarget(
-            name: "CoreInputGamepad",
-            dependencies: ["RaylibSwift"],
-            path: "Sources/Core/CoreInputGamepad",
-            resources: [
-                .process("Resources")  // This includes the Resources directory with ps3.png and xbox.png
-            ]),
-
-        .executableTarget(
             name: "CoreInputMutlitouch",
             dependencies: ["RaylibSwift"],
             path: "Sources/Core/CoreInputMultitouch"),
