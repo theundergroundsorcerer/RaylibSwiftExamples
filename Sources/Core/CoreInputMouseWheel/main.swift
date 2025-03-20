@@ -1,3 +1,13 @@
+/**
+ * CoreInputMouseWheel - Mouse Wheel Input
+ *
+ * This example demonstrates how to detect and use mouse wheel input in RaylibSwift.
+ * It shows how to track the mouse wheel movement and use it to adjust values.
+ *
+ * Based on the raylib "core_input_mouse_wheel" example:
+ * https://github.com/raysan5/raylib/blob/master/examples/core/core_input_mouse_wheel.c
+ */
+
 import Foundation
 import RaylibSwift
 

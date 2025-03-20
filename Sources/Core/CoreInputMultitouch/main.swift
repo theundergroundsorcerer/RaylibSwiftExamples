@@ -1,3 +1,13 @@
+/**
+ * CoreInputMultitouch - Multitouch Input
+ *
+ * This example demonstrates how to handle multitouch input in RaylibSwift.
+ * It shows how to detect and respond to multiple simultaneous touch points.
+ *
+ * Based on the raylib "core_input_multitouch" example:
+ * https://github.com/raysan5/raylib/blob/master/examples/core/core_input_multitouch.c
+ */
+
 import RaylibSwift
 
 let maxTouchPoints: Int32 = 10

@@ -1,3 +1,13 @@
+/**
+ * ShapesBasicShapes - Basic Shapes Drawing
+ *
+ * This example demonstrates how to draw basic shapes in RaylibSwift.
+ * It shows how to create and render lines, circles, rectangles, polygons and more.
+ *
+ * Based on the raylib "shapes_basic_shapes" example:
+ * https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_basic_shapes.c
+ */
+
 import RaylibSwift
 
 let screenWidth: Int32 = 800

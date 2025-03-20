@@ -1,3 +1,14 @@
+/**
+ * ShapesBouncingBall - Simple Physics Simulation
+ *
+ * This example demonstrates a basic physics simulation with RaylibSwift.
+ * It shows how to create a ball that bounces off the edges of the screen
+ * with basic collision detection and movement control.
+ *
+ * Based on the raylib "shapes_bouncing_ball" example:
+ * https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_bouncing_ball.c
+ */
+
 import RaylibSwift
 
 let screenWidth: Int32 = 800

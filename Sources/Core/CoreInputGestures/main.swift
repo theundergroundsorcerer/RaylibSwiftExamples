@@ -1,3 +1,12 @@
+/**
+ * CoreInputGestures - Touch Gesture Detection
+ *
+ * This example demonstrates how to detect and respond to touch gestures in RaylibSwift.
+ *
+ * Based on the raylib "core_input_gestures" example:
+ * https://github.com/raysan5/raylib/blob/master/examples/core/core_input_gestures.c
+ */
+
 import RaylibSwift
 
 let maxGestureStrings = 20

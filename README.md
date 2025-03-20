@@ -14,6 +14,21 @@ A collection of examples demonstrating the use of [RaylibSwift](https://github.c
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_mouse.c)
 - **CoreInputMouseWheel**: Demonstrates mouse wheel interaction
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_mouse_wheel.c)
+- **CoreInputGamepad**: Shows how to detect and use gamepad input
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_gamepad.c)
+- **CoreInputMultitouch**: Demonstrates handling multitouch input
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_multitouch.c)
+- **CoreInputGestures**: Shows how to detect and use touch gestures
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_gestures.c)
+- **CoreInputVirtualControls**: Illustrates creation of virtual input controls
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_virtual_controls.c)
+
+### Shapes Examples
+
+- **ShapesBasicShapes**: Demonstrates drawing basic shapes with RaylibSwift
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_basic_shapes.c)
+- **ShapesBouncingBall**: Shows a simple physics simulation with a bouncing ball
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_bouncing_ball.c)
 
 ## Getting Started
 

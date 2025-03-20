@@ -1,3 +1,13 @@
+/**
+ * CoreInputVirtualControls - Virtual Controls
+ * 
+ * This example demonstrates how to create and use virtual controls like buttons and joysticks
+ * for touch interfaces in RaylibSwift.
+ *
+ * Based on the raylib "core_input_virtual_controls" example:
+ * https://github.com/raysan5/raylib/blob/master/examples/core/core_input_virtual_controls.c
+ */
+
 import RaylibSwift
 
 public enum PadButton: Int32 {

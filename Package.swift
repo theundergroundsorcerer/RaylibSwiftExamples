@@ -35,7 +35,7 @@ let package = Package(
             path: "Sources/Core/CoreInputMouseWheel"),
 
         .executableTarget(
-            name: "CoreInputMutlitouch",
+            name: "CoreInputMultitouch",
             dependencies: ["RaylibSwift"],
             path: "Sources/Core/CoreInputMultitouch"),
 
