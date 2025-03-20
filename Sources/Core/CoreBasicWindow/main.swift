@@ -16,12 +16,10 @@ let screenHeight: Int32 = 450
 
 Window.initialize(screenWidth, screenHeight, "raylib [core] example - basic window")
 
-Time.setTargetFPS(60)
-
-while !Window.shouldClose {
-    Draw.frame {
-        Draw.clearBackground( .rayWhite)
-        Draw.text(
+Window.loop(fps: 60) {
+    Graphics.draw {
+        Graphics.clearBackground( .rayWhite)
+        Graphics.drawText(
             "Congrats! You created your first window!",
             at: (x: 190, y: 200),
             fontSize: 20,
@@ -29,5 +27,3 @@ while !Window.shouldClose {
         )
     }
 }
-
-Window.close()

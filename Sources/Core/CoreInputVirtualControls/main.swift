@@ -59,20 +59,20 @@ Window.loop(fps: 60) {
         }
     }
 
-    let frameTime = Time.frameTime
+    let deltaTime = Time.lastFrameDuration
     switch pressedButton {
-    case .up: playerPosition.y -= playerSpeed * frameTime
-    case .left: playerPosition.x -= playerSpeed * frameTime
-    case .right: playerPosition.x += playerSpeed * frameTime
-    case .down: playerPosition.y += playerSpeed * frameTime
+    case .up: playerPosition.y -= playerSpeed * deltaTime
+    case .left: playerPosition.x -= playerSpeed * deltaTime
+    case .right: playerPosition.x += playerSpeed * deltaTime
+    case .down: playerPosition.y += playerSpeed * deltaTime
     default: break
     }
 
-    Draw.frame {
-        Draw.clearBackground(.rayWhite)
+    Graphics.draw {
+        Graphics.clearBackground(.rayWhite)
 
         // Draw player position
-        Circle(center: playerPosition, radius: 50).draw(usingColor: .maroon)
+        Circle(center: playerPosition, radius: 50).draw(color: .maroon)
 
         // Draw GUI
         for i in 0..<PadButton.max {
@@ -82,10 +82,10 @@ Window.loop(fps: 60) {
 
             // draw button
             let button = Circle(center: buttonPositions[buttonIndex], radius: buttonRadius)
-            button.draw(usingColor: buttonColor)
+            button.draw(color: buttonColor)
 
             // draw button label
-            Draw.text(
+            Graphics.drawText (
                 buttonLabels[buttonIndex],
                 at: (
                     x: Int32(buttonPositions[buttonIndex].x - 7),
@@ -95,7 +95,7 @@ Window.loop(fps: 60) {
                 color: buttonLabelColors[buttonIndex]
             )
 
-            Draw.text(
+            Graphics.drawText (
                 "Move player with D-Pad buttons",
                 at: (x: 10, y: 10),
                 fontSize: 20,

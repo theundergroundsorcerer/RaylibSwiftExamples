@@ -17,9 +17,9 @@ Window.initialize(800, 450, "raylib [core] example - keyboard input")
 
 var ballPosition = Vector2(x: Float(screenWidth / 2), y: Float(screenHeigth / 2))
 let ballSpeed: Float = 2.0
-Time.setTargetFPS(60)
 
-while !Window.shouldClose {
+
+Window.loop(fps: 60) {
     // Update ball position based on arrow key input
     if Keyboard.isDown(key: .right) {
         ballPosition.x += ballSpeed
@@ -34,12 +34,10 @@ while !Window.shouldClose {
         ballPosition.y += ballSpeed
     }
 
-    Draw.frame {
-        Draw.clearBackground( .rayWhite)
-        Draw.text(
+    Graphics.draw {
+        Graphics.clearBackground( .rayWhite)
+        Graphics.drawText(
             "Move the ball with arrow keys", at: (x: 10, y: 10), fontSize: 20, color: .darkGray)
-        Draw.circle(at: ballPosition, radius: 50, color: .maroon)
+        Graphics.drawCircle(at: ballPosition, radius: 50, color: .maroon)
     }
 }
-
-Window.close()

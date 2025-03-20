@@ -197,6 +197,24 @@
             "name": "Release CoreInputVirtualControls",
             "program": "${workspaceFolder:RaylibSwiftExamples}/.build/release/CoreInputVirtualControls",
             "preLaunchTask": "swift: Build Release CoreInputVirtualControls"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Debug ShapesBasicShapes",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/debug/ShapesBasicShapes",
+            "preLaunchTask": "swift: Build Debug ShapesBasicShapes"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RaylibSwiftExamples}",
+            "name": "Release ShapesBasicShapes",
+            "program": "${workspaceFolder:RaylibSwiftExamples}/.build/release/ShapesBasicShapes",
+            "preLaunchTask": "swift: Build Release ShapesBasicShapes"
         }
     ]
 }

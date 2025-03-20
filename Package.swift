@@ -60,6 +60,13 @@ let package = Package(
         .executableTarget(
             name: "CoreInputVirtualControls",
             dependencies: ["RaylibSwift"],
-            path: "Sources/Core/CoreInputVirtualControls")
+            path: "Sources/Core/CoreInputVirtualControls"
+        ),
+        
+        .executableTarget(
+            name: "ShapesBasicShapes",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Shapes/ShapesBasicShapes"
+        )
     ]
 )

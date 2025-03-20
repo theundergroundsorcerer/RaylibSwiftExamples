@@ -56,10 +56,10 @@ Window.loop(fps: 60) {
         }
     }
 
-    Draw.frame {
-        Draw.clearBackground(.rayWhite)
-        Draw.rectangle(touchArea, color: .gray)
-        Draw.text(
+    Graphics.draw {
+        Graphics.clearBackground(.rayWhite)
+        Graphics.drawRectangle(touchArea, color: .gray)
+        Graphics.drawText(
             "GESTURES TOUCH AREA",
             at: (x: screenWidth - 270, y: screenHeight - 40),
             fontSize: 20,
@@ -67,27 +67,27 @@ Window.loop(fps: 60) {
 
         for i in 0..<gestureCount {
             if i % 2 == 0 {
-                Draw.rectangle(
-                    at: (x: 10, y: 30 + 20 * Int32(i)),
+                Graphics.drawRectangle(
+                    topLeft: (x: 10, y: 30 + 20 * Int32(i)),
                     width: 200,
                     height: 20,
                     color: Color.fade(.lightGray, alpha: 0.5))
             } else {
-                Draw.rectangle(
-                    at: (x: 10, y: 30 + 20 * Int32(i)),
+                Graphics.drawRectangle(
+                    topLeft: (x: 10, y: 30 + 20 * Int32(i)),
                     width: 200,
                     height: 20,
                     color: Color.fade(.lightGray, alpha: 0.3))
             }
 
             if(i < gestureCount - 1) {
-                Draw.text(
+                Graphics.drawText(
                     gestureStrings[i], 
                     at: (x: 35, y: 36 + 20 * Int32(i) ),
                     fontSize: 10,
                     color: .fade(.gray, alpha: 0.3))
             } else {
-                Draw.text(
+                Graphics.drawText(
                     gestureStrings[i], 
                     at: (x: 35, y: 36 + 20 * Int32(i) ),
                     fontSize: 10,
@@ -95,14 +95,14 @@ Window.loop(fps: 60) {
             }
         }
 
-        Draw.rectangleLines(
-            at: (x: 10, y: 29),
+        Graphics.drawRectangleLines(
+            topLeft: (x: 10, y: 29),
             width: 200,
             height: screenHeight - 50,
             color: .gray)
 
         if currentGesture != Gesture.none {
-            Draw.circle(at: touchPosition, radius: 30, color: .maroon)
+            Graphics.drawCircle(at: touchPosition, radius: 30, color: .maroon)
         }
     }
 }

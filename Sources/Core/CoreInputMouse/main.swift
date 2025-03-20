@@ -44,18 +44,18 @@ Window.loop(fps: 60) {
     }
 
     // Draw
-    Draw.frame {
-        Draw.clearBackground( .white)
-        Draw.circle(at: ballPosition, radius: 40, color: ballColor)
+    Graphics.draw {
+        Graphics.clearBackground( .white)
+        Graphics.drawCircle(at: ballPosition, radius: 40, color: ballColor)
 
-        Draw.text(
+        Graphics.drawText(
             "Move ball with mouse and click mouse button to change color",
             at: (x: 10, y: 10),
             fontSize: 20,
             color: ballColor
         )
 
-        Draw.text(
+        Graphics.drawText(
             "Press 'H' to toggle cursor visibility",
             at: (x: 10, y: 30),
             fontSize: 20,
@@ -63,7 +63,7 @@ Window.loop(fps: 60) {
         )
 
         if Window.Cursor.isHidden {
-            Draw.text(
+            Graphics.drawText(
                 "Cursor Hidden",
                 at: (x: 20, y: 60),
                 fontSize: 20,

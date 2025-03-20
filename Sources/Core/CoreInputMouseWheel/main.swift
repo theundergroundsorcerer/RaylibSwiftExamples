@@ -12,23 +12,23 @@ var scrollSpeed: Int32 = 4
 Window.loop(fps: 60) {
     boxPositionY -= Int32(Mouse.wheelMove) * scrollSpeed
 
-    Draw.frame {
+    Graphics.draw {
 
-        Draw.clearBackground( .rayWhite)
+        Graphics.clearBackground(.rayWhite)
 
-        Draw.rectangle(
-            at: (screenWidth / 2 - 40, y: boxPositionY),
+        Graphics.drawRectangle(
+            topLeft: (screenWidth / 2 - 40, y: boxPositionY),
             width: 80,
             height: 80,
             color: .gray)
 
-        Draw.text(
+        Graphics.drawText(
             "Use mouse wheel to move the cube up and down",
             at: (x: 10, y: 20),
             fontSize: 20,
             color: .gray)
 
-        Draw.text(
+        Graphics.drawText(
             "Box position Y: \(String(format: "%03d", Int(boxPositionY) ) )",
             at: (x: 10, y: 40),
             fontSize: 20,

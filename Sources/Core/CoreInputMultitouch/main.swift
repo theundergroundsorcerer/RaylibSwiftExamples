@@ -15,13 +15,13 @@ Window.loop(fps: 60) {
         touchCount = maxTouchPoints
     }
 
-    Draw.frame {
-        Draw.clearBackground(.rayWhite)
+    Graphics.draw {
+        Graphics.clearBackground(.rayWhite)
 
         for i in 0..<Int(touchCount) {
             if touchPositions[i].x > 0 && touchPositions[i].y > 0 {
-                Draw.circle(at: touchPositions[i], radius: 34, color: .orange)
-                Draw.text(
+                Graphics.drawCircle(at: touchPositions[i], radius: 34, color: .orange)
+                Graphics.drawText(
                     "\(i)",
                     at: (x: Int32(touchPositions[i].x - 10), y: Int32(touchPositions[i].y - 70)),
                     fontSize: 40,
@@ -30,7 +30,7 @@ Window.loop(fps: 60) {
             }
         }
 
-        Draw.text(
+        Graphics.drawText(
             "Touch the screen at multiple locations to get multiple balls",
             at: (x: 10, y: 10),
             fontSize: 20,
