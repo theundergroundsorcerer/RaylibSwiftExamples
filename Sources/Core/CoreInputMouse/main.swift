@@ -14,12 +14,11 @@ let screenHeight: Int32 = 450
 
 Window.initialize(screenWidth, screenHeight, "raylib [core] example- mouse input")
 
-Time.setTargetFPS(60)
 var ballPosition = Vector2(x: -100, y: -100)
 var ballColor = Color.darkBlue
 
-while !Window.shouldClose {
-    if Input.Keyboard.isPressed(key: .h) {
+Window.loop(fps: 60) {
+    if Keyboard.isPressed(key: .h) {
         if Window.Cursor.isHidden == false {
             Window.Cursor.hide()
         } else {
@@ -27,36 +26,36 @@ while !Window.shouldClose {
         }
     }
 
-    let ballPosition = Input.Mouse.position
-    if Input.Mouse.isPressed(button: .left) {
+    let ballPosition = Mouse.position
+    if Mouse.isPressed(button: .left) {
         ballColor = .maroon
-    } else if Input.Mouse.isPressed(button: .middle) {
+    } else if Mouse.isPressed(button: .middle) {
         ballColor = .maroon
-    } else if Input.Mouse.isPressed(button: .right) {
+    } else if Mouse.isPressed(button: .right) {
         ballColor = .darkBlue
-    } else if Input.Mouse.isPressed(button: .side) {
+    } else if Mouse.isPressed(button: .side) {
         ballColor = .purple
-    } else if Input.Mouse.isPressed(button: .extra) {
+    } else if Mouse.isPressed(button: .extra) {
         ballColor = .yellow
-    } else if Input.Mouse.isPressed(button: .forward) {
+    } else if Mouse.isPressed(button: .forward) {
         ballColor = .orange
-    } else if Input.Mouse.isPressed(button: .back) {
+    } else if Mouse.isPressed(button: .back) {
         ballColor = .beige
     }
 
     // Draw
-    Draw.frame {
-        Draw.clearBackground( .white)
-        Draw.circle(at: ballPosition, radius: 40, color: ballColor)
+    Graphics.draw {
+        Graphics.clearBackground( .white)
+        Graphics.drawCircle(at: ballPosition, radius: 40, color: ballColor)
 
-        Draw.text(
+        Graphics.drawText(
             "Move ball with mouse and click mouse button to change color",
             at: (x: 10, y: 10),
             fontSize: 20,
             color: ballColor
         )
 
-        Draw.text(
+        Graphics.drawText(
             "Press 'H' to toggle cursor visibility",
             at: (x: 10, y: 30),
             fontSize: 20,
@@ -64,7 +63,7 @@ while !Window.shouldClose {
         )
 
         if Window.Cursor.isHidden {
-            Draw.text(
+            Graphics.drawText(
                 "Cursor Hidden",
                 at: (x: 20, y: 60),
                 fontSize: 20,
@@ -73,5 +72,3 @@ while !Window.shouldClose {
 
     }
 }
-
-Window.close()

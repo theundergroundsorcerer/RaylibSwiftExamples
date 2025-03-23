@@ -15,7 +15,7 @@ let package = Package(
             name: "CoreBasicWindow",
             dependencies: ["RaylibSwift"],
             path: "Sources/Core//CoreBasicWindow"),
-            
+
         .executableTarget(
             name: "CoreInputKeys",
             dependencies: ["RaylibSwift"],
@@ -24,13 +24,42 @@ let package = Package(
         .executableTarget(
             name: "CoreInputMouse",
             dependencies: ["RaylibSwift"],
-            path: "Sources/Core/CoreInputMouse"
-        ),
+            path: "Sources/Core/CoreInputMouse"),
 
         .executableTarget(
             name: "CoreInputMouseWheel",
             dependencies: ["RaylibSwift"],
-            path: "Sources/Core/CoreInputMouseWheel"
+            path: "Sources/Core/CoreInputMouseWheel"),
+
+        .executableTarget(
+            name: "CoreInputMultitouch",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Core/CoreInputMultitouch"),
+
+        .executableTarget(
+            name: "CoreInputGestures",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Core/CoreInputGestures"),
+
+        .executableTarget(
+            name: "CoreInputVirtualControls",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Core/CoreInputVirtualControls"),
+        
+        .executableTarget(
+            name: "ShapesBasicShapes",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Shapes/ShapesBasicShapes"),
+
+        .executableTarget(
+            name: "ShapesBouncingBall",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Shapes/ShapesBouncingBall"),
+        
+        .executableTarget(
+            name: "ShapesColorsPalette",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Shapes/ShapesColorsPalette"
         )
     ]
 )
