@@ -45,7 +45,7 @@ let package = Package(
             name: "CoreInputVirtualControls",
             dependencies: ["RaylibSwift"],
             path: "Sources/Core/CoreInputVirtualControls"),
-        
+
         .executableTarget(
             name: "ShapesBasicShapes",
             dependencies: ["RaylibSwift"],
@@ -55,11 +55,15 @@ let package = Package(
             name: "ShapesBouncingBall",
             dependencies: ["RaylibSwift"],
             path: "Sources/Shapes/ShapesBouncingBall"),
-        
+
         .executableTarget(
             name: "ShapesColorsPalette",
             dependencies: ["RaylibSwift"],
-            path: "Sources/Shapes/ShapesColorsPalette"
-        )
+            path: "Sources/Shapes/ShapesColorsPalette"),
+
+        .executableTarget(
+            name: "ShapesLogoRaylib",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Shapes/ShapesLogoRaylib")
     ]
 )
