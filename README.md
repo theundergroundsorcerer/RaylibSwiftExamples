@@ -35,6 +35,8 @@ A collection of examples demonstrating the use of [RaylibSwift](https://github.c
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_logo_raylib.c)
 - **ShapesLogoRaylibAnim**: Animates the Raylib logo with a multi-stage sequence
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_logo_raylib_anim.c)
+- **ShapesRectangleScaling**: Interactive rectangle scaling with mouse drag handles
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_rectangle_scaling.c)
 
 ## Getting Started
 

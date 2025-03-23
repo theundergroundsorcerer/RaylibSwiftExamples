@@ -69,8 +69,12 @@ let package = Package(
         .executableTarget(
             name: "ShapesLogoRaylibAnim",
             dependencies: ["RaylibSwift"],
-            path: "Sources/Shapes/ShapesLogoRaylibAnim")
+            path: "Sources/Shapes/ShapesLogoRaylibAnim"),
 
-        
+        .executableTarget(
+            name: "ShapesRectangleScaling",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Shapes/ShapesRectangleScaling"
+        ),
     ]
 )
