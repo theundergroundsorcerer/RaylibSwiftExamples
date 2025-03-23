@@ -1,3 +1,12 @@
+/**
+ * ShapesColorsPalette - Colors Palette
+ *
+ * This example shows predefined raylib colors and allows user interaction to
+ * explore them through an interactive color palette display with hover effects.
+ *
+ * Based on the raylib "shapes_colors_palette" example:
+ * https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_colors_palette.c
+ */
 import RaylibSwift
 
 let colors: [Color] = [
