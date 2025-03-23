@@ -27,7 +27,7 @@ let colorRectangles: [Rectangle] = (0..<maxColorsCount).map { (i: Int) in
     )
 }
 
-var isMouseOverColorRectangle = [Bool](repeating: false, count: colors.count)
+var isMouseOverColorRectangle: [Bool] = [Bool](repeating: false, count: colors.count)
 
 let screenWidth: Int32 = 800
 let screenHeight: Int32 = 450

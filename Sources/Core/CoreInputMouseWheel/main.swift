@@ -16,7 +16,7 @@ let screenHeight: Int32 = 450
 
 Window.initialize(screenWidth, screenHeight, "raylib [core] example - input mouse wheel")
 
-var boxPositionY = screenHeight / 2 - 40
+var boxPositionY: Int32 = screenHeight / 2 - 40
 var scrollSpeed: Int32 = 4
 
 Window.loop(fps: 60) {

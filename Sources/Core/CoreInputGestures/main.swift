@@ -9,7 +9,7 @@
 
 import RaylibSwift
 
-let maxGestureStrings = 20
+let maxGestureStrings: Int = 20
 
 let screenWidth: Int32 = 800
 let screenHeight: Int32 = 450
