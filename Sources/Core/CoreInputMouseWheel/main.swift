@@ -14,12 +14,15 @@ import RaylibSwift
 let screenWidth: Int32 = 800
 let screenHeight: Int32 = 450
 
-Window.initialize(screenWidth, screenHeight, "raylib [core] example - input mouse wheel")
+Window.initialize(
+    width: screenWidth,
+    height: screenHeight, 
+    title: "raylib [core] example - input mouse wheel")
 
 var boxPositionY: Int32 = screenHeight / 2 - 40
 var scrollSpeed: Int32 = 4
 
-Window.loop(fps: 60) {
+Window.loop(initialTargetFps: 60) {
     boxPositionY -= Int32(Mouse.wheelMove) * scrollSpeed
 
     Graphics.draw {

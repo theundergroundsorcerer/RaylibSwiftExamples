@@ -14,9 +14,12 @@ import CRaylib
 let screenWidth: Int32 = 800
 let screenHeight: Int32 = 450
 
-Window.initialize(screenWidth, screenHeight, "raylib [core] example - basic window")
+Window.initialize(
+    width: screenWidth, 
+    height: screenHeight, 
+    title: "raylib [core] example - basic window")
 
-Window.loop(fps: 60) {
+Window.loop(initialTargetFps: 60) {
     Graphics.draw {
         Graphics.clearBackground( .rayWhite)
         Graphics.drawText(

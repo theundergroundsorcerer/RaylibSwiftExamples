@@ -13,11 +13,14 @@ import RaylibSwift
 let screenWidth: Int32 = 800
 let screenHeight: Int32 = 450
 
-Window.initialize(screenWidth, screenHeight, "raylib [shapes] example - basic shapes drawing")
+Window.initialize(
+    width: screenWidth, 
+    height: screenHeight, 
+    title: "raylib [shapes] example - basic shapes drawing")
 
 var rotation: Float32 = 0
 
-Window.loop(fps: 60) {
+Window.loop(initialTargetFps: 60) {
     rotation += 72 * Time.lastFrameDuration
 
     Graphics.draw {

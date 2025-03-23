@@ -41,9 +41,12 @@ var isMouseOverColorRectangle: [Bool] = [Bool](repeating: false, count: colors.c
 let screenWidth: Int32 = 800
 let screenHeight: Int32 = 450
 
-Window.initialize(screenWidth, screenHeight, "raylib [shapes] example - colors palette")
+Window.initialize(
+    width: screenWidth, 
+    height: screenHeight, 
+    title: "raylib [shapes] example - colors palette")
 
-Window.loop(fps: 60) {
+Window.loop(initialTargetFps: 60) {
     let mousePoint = Mouse.position
 
     for i in 0..<maxColorsCount {

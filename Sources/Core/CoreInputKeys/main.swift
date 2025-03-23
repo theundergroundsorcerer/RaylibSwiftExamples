@@ -13,13 +13,16 @@ import RaylibSwift
 let screenWidth: Int32 = 800
 let screenHeigth: Int32 = 450
 
-Window.initialize(800, 450, "raylib [core] example - keyboard input")
+Window.initialize(
+    width: 800, 
+    height: 450, 
+    title: "raylib [core] example - keyboard input")
 
 var ballPosition = Vector2(x: Float(screenWidth / 2), y: Float(screenHeigth / 2))
 let ballSpeed: Float = 2.0
 
 
-Window.loop(fps: 60) {
+Window.loop(initialTargetFps: 60) {
     // Update ball position based on arrow key input
     if Keyboard.isDown(key: .right) {
         ballPosition.x += ballSpeed

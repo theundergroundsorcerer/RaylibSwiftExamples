@@ -25,7 +25,10 @@ public enum PadButton: Int32 {
 let screenWidth: Int32 = 800
 let screeHeight: Int32 = 450
 
-Window.initialize(screenWidth, screeHeight, "raylib [core] example - input virtual controls")
+Window.initialize(
+    width: screenWidth, 
+    height: screeHeight, 
+    title: "raylib [core] example - input virtual controls")
 
 var padPosition = Vector(100, 350)
 let buttonRadius: Float = 30
@@ -43,7 +46,7 @@ let buttonLabelColors: [Color] = [.yellow, .blue, .red, .green]
 var playerPosition = Vector2(Float(screenWidth / 2), Float(screeHeight / 2))
 let playerSpeed: Float = 75
 
-Window.loop(fps: 60) {
+Window.loop(initialTargetFps: 60) {
     let inputPosition =
         if Touch.pointCount > 0 {
             Touch.position(index: 0)
