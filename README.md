@@ -33,6 +33,8 @@ A collection of examples demonstrating the use of [RaylibSwift](https://github.c
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_colors_palette.c)
 - **ShapesLogoRaylib**: Creates the Raylib logo using basic shape primitives
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_logo_raylib.c)
+- **ShapesRectangleScaling**: Interactive rectangle scaling with mouse drag handles
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_rectangle_scaling.c)
 
 ## Getting Started
 
