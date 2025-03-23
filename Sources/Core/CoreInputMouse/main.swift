@@ -20,7 +20,7 @@ Window.initialize(
 var ballPosition = Vector2(x: -100, y: -100)
 var ballColor = Color.darkBlue
 
-Window.loop(initialFps: 60) {
+Window.loop(initialTargetFps: 60) {
     if Keyboard.isPressed(key: .h) {
         if Window.Cursor.isHidden == false {
             Window.Cursor.hide()

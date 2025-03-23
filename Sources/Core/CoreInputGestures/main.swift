@@ -34,7 +34,7 @@ var gestureStrings = [String](repeating: "", count: maxGestureStrings)
 var currentGesture = Gesture.none
 var lastGesture = Gesture.none
 
-Window.loop(initialFps: 60) {
+Window.loop(initialTargetFps: 60) {
     lastGesture = currentGesture
     currentGesture = Gesture.currentDetected
     touchPosition = Touch.position(index: 0)

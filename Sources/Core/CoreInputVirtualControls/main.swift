@@ -46,7 +46,7 @@ let buttonLabelColors: [Color] = [.yellow, .blue, .red, .green]
 var playerPosition = Vector2(Float(screenWidth / 2), Float(screeHeight / 2))
 let playerSpeed: Float = 75
 
-Window.loop(initialFps: 60) {
+Window.loop(initialTargetFps: 60) {
     let inputPosition =
         if Touch.pointCount > 0 {
             Touch.position(index: 0)

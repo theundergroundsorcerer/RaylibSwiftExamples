@@ -18,7 +18,7 @@ Window.initialize(
     height: 450, 
     title: "raylib [shapes] example - ralyibg logo using shapes")
 
-Window.loop(initialFps: 60) {
+Window.loop(initialTargetFps: 60) {
     Graphics.draw {
         Graphics.clearBackground(.rayWhite)
 

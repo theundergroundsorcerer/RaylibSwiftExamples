@@ -19,7 +19,7 @@ Window.initialize(
     height: screenHeight, 
     title: "raylib [core] example - basic window")
 
-Window.loop(initialFps: 60) {
+Window.loop(initialTargetFps: 60) {
     Graphics.draw {
         Graphics.clearBackground( .rayWhite)
         Graphics.drawText(

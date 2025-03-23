@@ -46,7 +46,7 @@ Window.initialize(
     height: screenHeight, 
     title: "raylib [shapes] example - colors palette")
 
-Window.loop(initialFps: 60) {
+Window.loop(initialTargetFps: 60) {
     let mousePoint = Mouse.position
 
     for i in 0..<maxColorsCount {

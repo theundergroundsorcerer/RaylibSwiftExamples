@@ -20,7 +20,7 @@ Window.initialize(
 
 var rotation: Float32 = 0
 
-Window.loop(initialFps: 60) {
+Window.loop(initialTargetFps: 60) {
     rotation += 72 * Time.lastFrameDuration
 
     Graphics.draw {

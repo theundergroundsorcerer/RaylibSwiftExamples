@@ -26,7 +26,7 @@ var ballSpeed = Vector2(x: 300.0, y: 240.0)
 var gameIsPaused = false
 var framesCounter: Int32 = 0
 
-Window.loop(initialFps: 60) {
+Window.loop(initialTargetFps: 60) {
     // update
     if Keyboard.isPressed(key: .space) {
         gameIsPaused = !gameIsPaused

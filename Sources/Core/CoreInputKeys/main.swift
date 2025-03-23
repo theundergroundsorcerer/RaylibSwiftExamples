@@ -22,7 +22,7 @@ var ballPosition = Vector2(x: Float(screenWidth / 2), y: Float(screenHeigth / 2)
 let ballSpeed: Float = 2.0
 
 
-Window.loop(initialFps: 60) {
+Window.loop(initialTargetFps: 60) {
     // Update ball position based on arrow key input
     if Keyboard.isDown(key: .right) {
         ballPosition.x += ballSpeed

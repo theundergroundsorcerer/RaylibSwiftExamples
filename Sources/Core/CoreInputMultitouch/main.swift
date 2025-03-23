@@ -22,7 +22,7 @@ Window.initialize(
 
 var touchPositions = [Vector2](repeating: Vector2(0, 0), count: 10)
 
-Window.loop(initialFps: 60) {
+Window.loop(initialTargetFps: 60) {
     var touchCount = Touch.pointCount
     if touchCount > maxTouchPoints {
         touchCount = maxTouchPoints
