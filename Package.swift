@@ -14,7 +14,7 @@ let package = Package(
         .executableTarget(
             name: "CoreBasicWindow",
             dependencies: ["RaylibSwift"],
-            path: "Sources/Core//CoreBasicWindow"),
+            path: "Sources/Core/CoreBasicWindow"),
 
         .executableTarget(
             name: "CoreInputKeys",
