@@ -67,6 +67,13 @@ let package = Package(
         .executableTarget(
             name: "ShapesLogoRaylib",
             dependencies: ["RaylibSwift"],
-            path: "Sources/Shapes/ShapesLogoRaylib")
+            path: "Sources/Shapes/ShapesLogoRaylib"),
+
+        .executableTarget(
+            name: "ShapesLogoRaylibAnim",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Shapes/ShapesLogoRaylibAnim")
+
+        
     ]
 )
