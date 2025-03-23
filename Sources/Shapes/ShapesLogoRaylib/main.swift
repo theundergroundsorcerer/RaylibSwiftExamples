@@ -13,9 +13,12 @@ import RaylibSwift
 let screenWidth: Int32 = 800
 let screenHeight: Int32 = 450
 
-Window.initialize(800, 450, "raylib [shapes] example - ralyibg logo using shapes")
+Window.initialize(
+    width: 800, 
+    height: 450, 
+    title: "raylib [shapes] example - ralyibg logo using shapes")
 
-Window.loop(fps: 60) {
+Window.loop(initialFps: 60) {
     Graphics.draw {
         Graphics.clearBackground(.rayWhite)
 

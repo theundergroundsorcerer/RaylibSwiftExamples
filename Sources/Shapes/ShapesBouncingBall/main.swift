@@ -15,7 +15,10 @@ let screenWidth: Int32 = 800
 let screenHeight: Int32 = 450
 
 Utils.setConfigFlags(.msaa4xHint)
-Window.initialize(screenWidth, screenHeight, "raylib [shapes] example - bouncing ball")
+Window.initialize(
+    width: screenWidth, 
+    height: screenHeight, 
+    title: "raylib [shapes] example - bouncing ball")
 
 var ball = Circle(center: (x: screenWidth / 2, y: screenHeight / 2), radius: 20)
 var ballSpeed = Vector2(x: 300.0, y: 240.0)
@@ -23,7 +26,7 @@ var ballSpeed = Vector2(x: 300.0, y: 240.0)
 var gameIsPaused = false
 var framesCounter: Int32 = 0
 
-Window.loop(fps: 60) {
+Window.loop(initialFps: 60) {
     // update
     if Keyboard.isPressed(key: .space) {
         gameIsPaused = !gameIsPaused

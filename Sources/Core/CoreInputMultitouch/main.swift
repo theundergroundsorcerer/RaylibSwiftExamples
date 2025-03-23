@@ -15,11 +15,14 @@ let maxTouchPoints: Int32 = 10
 let screenWidth: Int32 = 800
 let screenHeight: Int32 = 450
 
-Window.initialize(screenWidth, screenHeight, "raylib [core] example - input multitouch")
+Window.initialize(
+    width: screenWidth, 
+    height: screenHeight, 
+    title: "raylib [core] example - input multitouch")
 
 var touchPositions = [Vector2](repeating: Vector2(0, 0), count: 10)
 
-Window.loop(fps: 60) {
+Window.loop(initialFps: 60) {
     var touchCount = Touch.pointCount
     if touchCount > maxTouchPoints {
         touchCount = maxTouchPoints

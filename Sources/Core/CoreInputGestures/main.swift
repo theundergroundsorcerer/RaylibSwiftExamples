@@ -14,7 +14,10 @@ let maxGestureStrings: Int = 20
 let screenWidth: Int32 = 800
 let screenHeight: Int32 = 450
 
-Window.initialize(screenWidth, screenHeight, "raylib [core] example - input gestures")
+Window.initialize(
+    width: screenWidth, 
+    height: screenHeight,
+    title: "raylib [core] example - input gestures")
 
 var touchPosition = Vector2(x: 0, y: 0)
 let touchArea = Rectangle(
@@ -31,7 +34,7 @@ var gestureStrings = [String](repeating: "", count: maxGestureStrings)
 var currentGesture = Gesture.none
 var lastGesture = Gesture.none
 
-Window.loop(fps: 60) {
+Window.loop(initialFps: 60) {
     lastGesture = currentGesture
     currentGesture = Gesture.currentDetected
     touchPosition = Touch.position(index: 0)

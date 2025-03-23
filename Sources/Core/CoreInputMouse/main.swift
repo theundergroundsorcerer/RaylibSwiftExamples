@@ -12,12 +12,15 @@ import RaylibSwift
 let screenWidth: Int32 = 800
 let screenHeight: Int32 = 450
 
-Window.initialize(screenWidth, screenHeight, "raylib [core] example- mouse input")
+Window.initialize(
+    width: screenWidth, 
+    height: screenHeight, 
+    title: "raylib [core] example- mouse input")
 
 var ballPosition = Vector2(x: -100, y: -100)
 var ballColor = Color.darkBlue
 
-Window.loop(fps: 60) {
+Window.loop(initialFps: 60) {
     if Keyboard.isPressed(key: .h) {
         if Window.Cursor.isHidden == false {
             Window.Cursor.hide()
