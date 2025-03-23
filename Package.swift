@@ -76,5 +76,11 @@ let package = Package(
             dependencies: ["RaylibSwift"],
             path: "Sources/Shapes/ShapesRectangleScaling"
         ),
+
+        .executableTarget(
+            name: "ShapesLinesBeizer",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Shapes/ShapesLinesBeizer"
+        )
     ]
 )
