@@ -31,6 +31,8 @@ A collection of examples demonstrating the use of [RaylibSwift](https://github.c
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_bouncing_ball.c)
 - **ShapesColorsPalette**: Displays a color palette with interactive hover effects
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_colors_palette.c)
+- **ShapesLinesBezier**: Interactive cubic Bezier curves with draggable control points
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_lines_bezier.c)
 - **ShapesLogoRaylib**: Creates the Raylib logo using basic shape primitives
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_logo_raylib.c)
 - **ShapesLogoRaylibAnim**: Animates the Raylib logo with a multi-stage sequence
