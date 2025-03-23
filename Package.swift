@@ -78,9 +78,9 @@ let package = Package(
         ),
 
         .executableTarget(
-            name: "ShapesLinesBeizer",
+            name: "ShapesLinesBezier",
             dependencies: ["RaylibSwift"],
-            path: "Sources/Shapes/ShapesLinesBeizer"
+            path: "Sources/Shapes/ShapesLinesBezier"
         )
     ]
 )
