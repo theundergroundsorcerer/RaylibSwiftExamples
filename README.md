@@ -33,6 +33,8 @@ A collection of examples demonstrating the use of [RaylibSwift](https://github.c
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_collision_area.c)
 - **ShapesColorsPalette**: Displays a color palette with interactive hover effects
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_colors_palette.c)
+- **ShapesFollowingEyes**: Creates interactive eyes that follow the mouse cursor
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_following_eyes.c)
 - **ShapesLinesBezier**: Interactive cubic Bezier curves with draggable control points
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_lines_bezier.c)
 - **ShapesLogoRaylib**: Creates the Raylib logo using basic shape primitives
@@ -41,6 +43,7 @@ A collection of examples demonstrating the use of [RaylibSwift](https://github.c
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_logo_raylib_anim.c)
 - **ShapesRectangleScaling**: Interactive rectangle scaling with mouse drag handles
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_rectangle_scaling.c)
+
 
 ## Getting Started
 
