@@ -7,7 +7,9 @@ import PackageDescription
 
 let package = Package(
     name: "RaylibSwiftExamples",
-    dependencies: [.package(url: "https://github.com/theundergroundsorcerer/RaylibSwift.git", branch: "develop")],
+    dependencies: [
+        .package(url: "https://github.com/theundergroundsorcerer/RaylibSwift.git", branch: "develop")
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
@@ -74,13 +76,16 @@ let package = Package(
         .executableTarget(
             name: "ShapesRectangleScaling",
             dependencies: ["RaylibSwift"],
-            path: "Sources/Shapes/ShapesRectangleScaling"
-        ),
+            path: "Sources/Shapes/ShapesRectangleScaling"),
 
         .executableTarget(
             name: "ShapesLinesBezier",
             dependencies: ["RaylibSwift"],
-            path: "Sources/Shapes/ShapesLinesBezier"
-        )
+            path: "Sources/Shapes/ShapesLinesBezier"),
+        
+        .executableTarget(
+            name: "ShapesCollisionArea",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Shapes/ShapesCollisionArea")
     ]
 )
