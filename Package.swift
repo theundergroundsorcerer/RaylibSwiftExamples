@@ -86,6 +86,11 @@ let package = Package(
         .executableTarget(
             name: "ShapesCollisionArea",
             dependencies: ["RaylibSwift"],
-            path: "Sources/Shapes/ShapesCollisionArea")
+            path: "Sources/Shapes/ShapesCollisionArea"),
+        
+        .executableTarget(
+            name: "ShapesFollowingEyes", 
+            dependencies: ["RaylibSwift"], 
+            path: "Sources/Shapes/ShapesFollowingEyes")
     ]
 )
