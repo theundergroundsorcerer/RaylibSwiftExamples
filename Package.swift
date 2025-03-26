@@ -2,15 +2,49 @@
 
 // swift-tools-version: 6.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
-
 import PackageDescription
+
+let exampleNames: [String: [String]] = [
+    "Core": [
+        "CoreBasicWindow", "CoreInputKeys", "CoreInputMouse",
+        "CoreInputMouseWheel", "CoreInputMultitouch", "CoreInputGestures",
+        "CoreInputVirtualControls",
+    ],
+    "Shapes": [
+        "ShapesBasicShapes", "ShapesBouncingBall", "ShapesCollisionArea", "ShapesColorsPalette",
+        "ShapesFollowingEyes", "ShapesLinesBezier", "ShapesLogoRaylib", "ShapesLogoRaylibAnim",
+        "ShapesRectangleScaling"
+    ],
+]
+
+func makeExample(name: String, folderName: String) -> Target {
+    .executableTarget(
+        name: name,
+        dependencies: ["RaylibSwift"],
+        path: "Sources/\(folderName)/\(name)")
+}
+
+func makeExamples() -> [Target] {
+    var result: [Target] = []
+    // make examples in core
+
+    for (folderName, exampleNames) in exampleNames {
+        for exampleName in exampleNames {
+            result.append(makeExample(name: exampleName, folderName: folderName))
+        }
+    }
+
+    return result
+}
 
 let package = Package(
     name: "RaylibSwiftExamples",
     dependencies: [
-        .package(url: "https://github.com/theundergroundsorcerer/RaylibSwift.git", branch: "develop")
+        .package(
+            url: "https://github.com/theundergroundsorcerer/RaylibSwift.git", branch: "develop")
     ],
-    targets: [
+    targets: makeExamples()
+    /* [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .executableTarget(
@@ -82,15 +116,15 @@ let package = Package(
             name: "ShapesLinesBezier",
             dependencies: ["RaylibSwift"],
             path: "Sources/Shapes/ShapesLinesBezier"),
-        
+
         .executableTarget(
             name: "ShapesCollisionArea",
             dependencies: ["RaylibSwift"],
             path: "Sources/Shapes/ShapesCollisionArea"),
-        
+
         .executableTarget(
-            name: "ShapesFollowingEyes", 
-            dependencies: ["RaylibSwift"], 
-            path: "Sources/Shapes/ShapesFollowingEyes")
-    ]
+            name: "ShapesFollowingEyes",
+            dependencies: ["RaylibSwift"],
+            path: "Sources/Shapes/ShapesFollowingEyes"),
+    ]*/
 )
