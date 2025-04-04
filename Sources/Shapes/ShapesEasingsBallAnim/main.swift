@@ -59,7 +59,7 @@ Window.loop(initialTargetFps: 60) {
             to: Vector2(
                 x: Ease.elasticOut(
                     from: -100,
-                    to: Float(Window.screenWidth / 2 + 100),
+                    to: Float(Window.screenWidth / 2),
                     progress: Progress(time: Float(framesCounter), duration: 120)),
                 y: ball.center.y))
         if framesCounter >= 120 {
@@ -73,7 +73,7 @@ Window.loop(initialTargetFps: 60) {
         ball.resize(
             radius: Ease.elasticIn(
                 from: 20,
-                to: 500,
+                to: 520,
                 progress: Progress(time: Float(framesCounter), duration: 200)))
         if framesCounter >= 200 {
             framesCounter = 0
