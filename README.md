@@ -6,46 +6,45 @@ A collection of examples demonstrating the use of [RaylibSwift](https://github.c
 
 ### Core Examples
 
-- **CoreBasicWindow**: Demonstrates how to create a basic window using RaylibSwift
+- **CoreBasicWindow**: Demonstrates how to create a basic window using RaylibSwift (core_basic_window)
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_basic_window.c)
-- **CoreInputKeys**: Shows how to handle keyboard input
+- **CoreInputKeys**: Shows how to handle keyboard input (core_input_keys)
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_keys.c)
-- **CoreInputMouse**: Illustrates mouse input handling
+- **CoreInputMouse**: Illustrates mouse input handling (core_input_mouse)
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_mouse.c)
-- **CoreInputMouseWheel**: Demonstrates mouse wheel interaction
+- **CoreInputMouseWheel**: Demonstrates mouse wheel interaction (core_input_mouse_wheel)
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_mouse_wheel.c)
-- **CoreInputGamepad**: Shows how to detect and use gamepad input
-  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_gamepad.c)
-- **CoreInputMultitouch**: Demonstrates handling multitouch input
+- **CoreInputMultitouch**: Demonstrates handling multitouch input (core_input_multitouch)
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_multitouch.c)
-- **CoreInputGestures**: Shows how to detect and use touch gestures
+- **CoreInputGestures**: Shows how to detect and use touch gestures (core_input_gestures)
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_gestures.c)
-- **CoreInputVirtualControls**: Illustrates creation of virtual input controls
+- **CoreInputVirtualControls**: Illustrates creation of virtual input controls (core_input_virtual_controls)
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/core/core_input_virtual_controls.c)
 
 ### Shapes Examples
 
-- **ShapesBasicShapes**: Demonstrates drawing basic shapes with RaylibSwift
+- **ShapesBasicShapes**: Demonstrates drawing basic shapes with RaylibSwift (shapes_basic_shapes)
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_basic_shapes.c)
-- **ShapesBouncingBall**: Shows a simple physics simulation with a bouncing ball
+- **ShapesBouncingBall**: Shows a simple physics simulation with a bouncing ball (shapes_bouncing_ball)
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_bouncing_ball.c)
-- **ShapesCollisionArea**: Demonstrates rectangle collision detection with area calculation
-  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_collision_area.c)
-- **ShapesColorsPalette**: Displays a color palette with interactive hover effects
+- **ShapesColorsPalette**: Displays a color palette with interactive hover effects (shapes_colors_palette)
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_colors_palette.c)
-- **ShapesEasingsBallAnim**: Shows ball animations using different easing functions
-  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_easings_ball_anim.c)
-- **ShapesFollowingEyes**: Creates interactive eyes that follow the mouse cursor
-  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_following_eyes.c)
-- **ShapesLinesBezier**: Interactive cubic Bezier curves with draggable control points
-  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_lines_bezier.c)
-- **ShapesLogoRaylib**: Creates the Raylib logo using basic shape primitives
+- **ShapesLogoRaylib**: Creates the Raylib logo using basic shape primitives (shapes_logo_raylib)
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_logo_raylib.c)
-- **ShapesLogoRaylibAnim**: Animates the Raylib logo with a multi-stage sequence
+- **ShapesLogoRaylibAnim**: Animates the Raylib logo with a multi-stage sequence (shapes_logo_raylib_anim)
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_logo_raylib_anim.c)
-- **ShapesRectangleScaling**: Interactive rectangle scaling with mouse drag handles
+- **ShapesRectangleScaling**: Interactive rectangle scaling with mouse drag handles (shapes_rectangle_scaling)
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_rectangle_scaling.c)
-
+- **ShapesLinesBezier**: Interactive cubic Bezier curves with draggable control points (shapes_lines_bezier)
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_lines_bezier.c)
+- **ShapesCollisionArea**: Demonstrates rectangle collision detection with area calculation (shapes_collision_area)
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_collision_area.c)
+- **ShapesFollowingEyes**: Creates interactive eyes that follow the mouse cursor (shapes_following_eyes)
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_following_eyes.c)
+- **ShapesEasingsBallAnim**: Shows ball animations using different easing functions (shapes_easings_ball_anim)
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_easings_ball_anim.c)
+- **ShapesEasingsBoxAnim**: Demonstrates box animations with various easing functions (shapes_easings_box_anim)
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_easings_box_anim.c)
 
 ## Getting Started
 
