@@ -14,8 +14,8 @@ let exampleNames: [String: [String]] = [
     ],
     "Shapes": [
         "ShapesBasicShapes", "ShapesBouncingBall", "ShapesCollisionArea", "ShapesColorsPalette",
-        "ShapesFollowingEyes", "ShapesLinesBezier", "ShapesLogoRaylib", "ShapesLogoRaylibAnim",
-        "ShapesRectangleScaling"
+        "ShapesEasingsBallAnim", "ShapesFollowingEyes", "ShapesLinesBezier", "ShapesLogoRaylib", 
+        "ShapesLogoRaylibAnim", "ShapesRectangleScaling"
     ],
 ]
 
