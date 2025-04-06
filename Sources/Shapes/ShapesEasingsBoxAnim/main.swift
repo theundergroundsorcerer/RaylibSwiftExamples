@@ -42,7 +42,7 @@ enum AnimationState: Int {
 
 // Define animation control variables
 var animationState: AnimationState = .moveBox
-var framesCounter = I32(0)
+var framesCounter = I(0)
 
 // Main game loop
 //--------------------------------------------------------------------------------------
