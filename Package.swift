@@ -51,7 +51,7 @@ let package = Package(
     name: "RaylibSwiftExamples",
     dependencies: [
         .package(
-            url: "https://github.com/theundergroundsorcerer/RaylibSwift.git", branch: "develop")
+            url: "https://github.com/theundergroundsorcerer/RaylibSwift.git", branch: "main")
     ],
     targets: makeExamples()
 )
