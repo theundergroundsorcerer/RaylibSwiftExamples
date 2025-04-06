@@ -45,6 +45,8 @@ A collection of examples demonstrating the use of [RaylibSwift](https://github.c
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_easings_ball_anim.c)
 - **ShapesEasingsBoxAnim**: Demonstrates box animations with various easing functions (shapes_easings_box_anim)
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_easings_box_anim.c)
+- **ShapesEasingsRectangleArray**: Demonstrates easing animations applied to a grid of rectangles (shapes_easings_rectangle_array)
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_easings_rectangle_array.c)
 
 ## Getting Started
 
