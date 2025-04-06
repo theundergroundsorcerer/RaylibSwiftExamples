@@ -125,17 +125,35 @@ Window.loop(initialTargetFps: 60) {
             maxValue: 100)
 
         // UI Controls - Display options
+        // Checkbox for toggling ring drawing
         Gui.checkBox(
             bounds: Rectangle(x: 600, y: 320, width: 20, height: 20),
             text: "Draw Ring",
             checked: &drawRing)
+        
+        // Checkbox for toggling ring outline drawing
         Gui.checkBox(
             bounds: Rectangle(x: 600, y: 350, width: 20, height: 20),
             text: "Draw Ring Lines",
             checked: &drawRingLines)
+        
+        // Checkbox for toggling circle sector outline drawing
         Gui.checkBox(
             bounds: Rectangle(x: 600, y: 380, width: 20, height: 20),
             text: "Draw Circle Lines", 
             checked: &drawCircleLines)
+        
+        // Calculate minimum recommended segments based on the angle range
+        let minSegments = ( (endAngle - startAngle) / 90).rounded(.up) 
+        
+        // Determine if we're in manual or auto segment mode
+        let isManual = segments > minSegments
+        
+        // Display the current mode (MANUAL or AUTO)
+        Text("MODE: \(isManual ? "MANUAL" : "AUTO")").draw(
+            at: (x: 600, y: 270), fontSize: 10, color: isManual ? .maroon : .darkGray)
+        
+        // Display FPS counter in the top-left corner
+        Graphics.drawFps(at: (x: 10, y: 10))
     }
 }
