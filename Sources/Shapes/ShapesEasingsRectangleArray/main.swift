@@ -9,13 +9,13 @@
 
 import RaylibSwift
 
-let screenWidth = I32(800)
-let screenHeight = I32(450)
+let screenWidth = I(800)
+let screenHeight = I(450)
 let rectanglesWidth = F(50)
 let rectanglesHeight = F(50)
 let maxRectanglesPerRow = screenWidth / Int32(rectanglesHeight.rounded())
 let maxRectanglesPerColumn = screenHeight / Int32(rectanglesHeight.rounded())
-let playTimeFrames = I32(240)
+let playTimeFrames = I(240)
 
 Window.initialize(
     width: screenWidth,
@@ -40,7 +40,7 @@ for y in 0...maxRectanglesPerColumn {
 }
 
 // Animation state variables
-var framesCounter = I32(0)
+var framesCounter = I(0)
 var isAnimationActive = true
 
 // Main game loop
