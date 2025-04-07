@@ -10,15 +10,13 @@
 
 import RaylibSwift
 
-let screenWidth: Int32 = 800
-let screenHeight: Int32 = 450
 
 Window.initialize(
-    width: screenWidth, 
-    height: screenHeight, 
+    width: 800, 
+    height: 450, 
     title: "raylib [shapes] example - basic shapes drawing")
 
-var rotation: Float32 = 0
+var rotation = F(0)
 
 Window.loop(initialTargetFps: 60) {
     rotation += 72 * Time.lastFrameDuration
@@ -34,62 +32,62 @@ Window.loop(initialTargetFps: 60) {
             color: .darkGray)
 
         // Circle shapes and lines
-        Graphics.drawCircle(at: (x: screenWidth / 5, y: 120), radius: 35, color: .darkBlue)
+        Graphics.drawCircle(at: (x: Window.screenWidth / 5, y: 120), radius: 35, color: .darkBlue)
         Graphics.drawCircleGradient(
-            at: (x: screenWidth / 5, y: 220),
+            at: (x: Window.screenWidth / 5, y: 220),
             radius: 60,
             innerColor: .green,
             outerColor: .skyBlue)
         Graphics.drawCircleLines(
-            at: (x: screenWidth / 5, 340),
+            at: (x: Window.screenWidth / 5, 340),
             radius: 80,
             color: .darkBlue)
 
         // Rectangle shapes and lines
         Graphics.drawRectangle(
-            topLeft: (x: screenWidth / 2 - 60, y: 100),
+            topLeft: (x: Window.screenWidth / 2 - 60, y: 100),
             width: 120,
             height: 60,
             color: .red)
         Graphics.drawRectangleGradient(
-            topLeft: (x: screenWidth / 2 - 90, y: 170),
+            topLeft: (x: Window.screenWidth / 2 - 90, y: 170),
             width: 180,
             height: 130,
             leftColor: .maroon,
             rightColor: .gold)
         Graphics.drawRectangleLines(
-            topLeft: (x: screenWidth / 2 - 40, 320),
+            topLeft: (x: Window.screenWidth / 2 - 40, 320),
             width: 80,
             height: 60,
             color: .orange)
 
         // Triangle shapes and lines
         Graphics.drawTriangle(
-            vertex1: Vector2(x: Float(screenWidth) / 4 * 3, y: 80),
-            vertex2: Vector2(x: Float(screenWidth) / 4 * 3 - 60, y: 150),
-            vertex3: Vector2(x: Float(screenWidth) / 4 * 3 + 60, y: 150),
+            vertex1: Vector2(F(Window.screenWidth) / 4 * 3, 80),
+            vertex2: Vector2(F(Window.screenWidth) / 4 * 3 - 60, 150),
+            vertex3: Vector2(F(Window.screenWidth) / 4 * 3 + 60, 150),
             color: .darkBlue)
         Graphics.drawTriangleLines(
-            vertex1: Vector2(x: Float(screenWidth) / 4 * 3, y: 160),
-            vertex2: Vector2(x: Float(screenWidth) / 4 * 3 - 20, y: 230),
-            vertex3: Vector2(x: Float(screenWidth) / 4 * 3 + 20, y: 230),
+            vertex1: Vector2(F(Window.screenWidth) / 4 * 3, 160),
+            vertex2: Vector2(F(Window.screenWidth) / 4 * 3 - 20, 230),
+            vertex3: Vector2(F(Window.screenWidth) / 4 * 3 + 20, 230),
             color: .violet)
 
         // Draw shapes and lines
         Graphics.drawPolygon(
-            center: Vector2(x: Float(screenWidth / 4 * 3), y: 330),
+            center: Vector2(F(Window.screenWidth / 4 * 3), 330),
             numberOfSides: 6,
             radius: 80,
             rotation: rotation,
             color: .brown)
         Graphics.drawPolygonLines(
-            center: Vector2(x: Float(screenWidth) / 4 * 3, y: 330),
+            center: Vector2(F(Window.screenWidth) / 4 * 3, 330),
             numberOfSides: 6, 
             radius: 90, 
             rotation: rotation, 
             color: .brown)
         Graphics.drawPolygonLines(
-            center: Vector2(x: Float(screenWidth) / 4 * 3, y: 330),
+            center: Vector2(F(Window.screenWidth) / 4 * 3, 330),
             numberOfSides: 6, 
             radius: 85,
             rotation: rotation, 
@@ -98,7 +96,7 @@ Window.loop(initialTargetFps: 60) {
         
         Graphics.drawLine(
             from: (x: 18, y: 42), 
-            to: (x: screenWidth - 18, y: screenHeight - 42),
+            to: (x: Window.screenWidth - 18, y: Window.screenHeight - 42),
             color: .black)
     }
 }

@@ -51,6 +51,8 @@ A collection of examples demonstrating the use of [RaylibSwift](https://github.c
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_draw_ring.c)
 - **ShapesDrawSector**: Interactive demo for drawing and customizing circle sectors (shapes_draw_circle_sector)
   - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_draw_circle_sector.c)
+- **ShapesDrawRectangleRounded**: Interactive demo for drawing rectangles with rounded corners (shapes_draw_rectangle_rounded)
+  - [Original raylib example](https://github.com/raysan5/raylib/blob/master/examples/shapes/shapes_draw_rectangle_rounded.c)
 
 ## Getting Started
 
