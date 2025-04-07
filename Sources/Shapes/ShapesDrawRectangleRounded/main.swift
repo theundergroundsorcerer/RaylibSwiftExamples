@@ -53,6 +53,7 @@ Window.loop(initialTargetFps: 60) {
 
     Graphics.draw {
         // Clear the background with rayWhite color
+        
         Graphics.clearBackground(.rayWhite)
         // Draw a vertical line as a separator
         Graphics.drawLine(
